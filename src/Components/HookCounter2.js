@@ -7,13 +7,21 @@ function HookCounter2() {
   const incrementFive = ()=> {
     setCount(prevCount => prevCount + 5)
   }
+
+  const decrementFive = ()=> {
+    setCount(prevCount => prevCount -5)
+  }
+
   return (
     <div>
       Count : {count}
-      <button onClick={()=>setCount(initialCount)}>Reset</button>
-      <button onClick={()=>setCount(count+1)}>Increment</button>
-      <button onClick={()=>setCount(count-1)}>Decrement</button>
-      <button onClick={incrementFive}>Increment 5</button>
+      <div>
+        <button onClick={()=>setCount(count+1)}>Increment</button>
+        <button onClick={incrementFive}>Increment 5</button>
+        <button onClick={()=>setCount(initialCount)}>Reset</button>
+        <button onClick={()=>setCount(count-1)}>Decrement</button>
+        <button onClick={decrementFive}>Decrement 5</button>
+      </div> 
     </div>
   )
 }

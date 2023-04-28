@@ -5,3 +5,8 @@ Rules For Hooks
 
 * Only call hooks from react functions
 * Call them from within react functional Components and not just only regular javascript function  
+
+UseEffect
+
+* This Hook will let you perform sideeffect in functional components
+* This is a close replacement to component DidMount, componennt DidUpdate, component WillUnmount
