@@ -6,8 +6,12 @@ function EffectHookCounterOne() {
     document.title = `Clicked ${count} times`
   })
   return (
-    <div>
-      <button onClick={()=> setCount (count+1)}>Clicked {count} times.</button>
+    <div >
+      <button 
+        onClick = { ()=> setCount(count+1) }
+      >
+        Clicked {count} times.
+      </button>
     </div>
   )
 }
